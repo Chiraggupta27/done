@@ -12,9 +12,15 @@ const text9 = {alignSelf:"center" , color:"white"}
 const text10 = {alignSelf:"center"}
 const textInput ={height:50,width:370, borderRadius:10 , position:"relative" , top:165 , left:30  ,padding:10, fontSize:20 ,backgroundColor:"lightgrey"}
 const textInput1 ={color:"grey",height:50,width:370,borderRadius:10 , position:"relative" , top:195 , left:30 ,padding:10,fontSize:20 ,backgroundColor:"lightgrey"}
-const touchopacity = {alignSelf:"center",position:"absolute",top:250,height:50,width:330 , left:50 , borderRadius:10 , backgroundColor:"orange"}
-const touchopacity1 = {alignSelf:"center",position:"absolute",top:480,height:50,width:330 , left:50 , borderRadius:10 , backgroundColor:"blue" , justifyContent:"center"}
-const touchopacity2 = {alignSelf:"center",position:"absolute",top:550,height:50,width:330 , left:50 , borderRadius:10 , backgroundColor:"lightgrey" ,justifyContent:"center"}
+const touchopacity = {alignSelf:"center",position:"absolute",top:250,height:50,width:370 , left:30 , borderRadius:10 , backgroundColor:"orange"}
+const touchopacity1 = {alignSelf:"center",position:"absolute",top:480,height:50,width:370 , left:30 , borderRadius:10 , backgroundColor:"blue" , justifyContent:"center"}
+const touchopacity2 = {alignSelf:"center",position:"absolute",top:540,height:50,width:370 , left:30 , borderRadius:10 , backgroundColor:"lightgrey" ,justifyContent:"center"}
+const textValidate = {color:"red" , fontSize:13 , position:"relative" , top:90 , alignSelf:"flex-end" , right:30 }
+const textValidate1 = {color:"green" , fontSize:13 , position:"relative" , top:90 , alignSelf:"flex-end" , right:30 }
+const textValidate2 = {color:"red" , fontSize:13 , position:"relative" , top:120 , alignSelf:"flex-end" , right:30 }
+const textValidate3 = {color:"green" , fontSize:13 , position:"relative" , top:120 , alignSelf:"flex-end" , right:30 }
+
+
 
 
 export default {
@@ -35,4 +41,8 @@ export default {
     text9,
     text10,
     image1,
+    textValidate,
+    textValidate1,
+    textValidate2,
+    textValidate3,
 }

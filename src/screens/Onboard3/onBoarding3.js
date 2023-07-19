@@ -4,7 +4,7 @@ import images from "../../constants/images";
 import onBoardingstyle3 from "./onBoardingstyle3";
 import constants from "../../constants/constants";
 
-const onBoarding3 =() => {
+const OnBoarding3 =({navigation}) => {
     return (
         <View>
     
@@ -22,11 +22,11 @@ const onBoarding3 =() => {
         </View>
 
         
-        <TouchableOpacity style={onBoardingstyle3.touchopacity}>
-            <Text style={onBoardingstyle3.text4}>{constants.ntext3}</Text>
+        <TouchableOpacity style={onBoardingstyle3.touchopacity} onPress={()=>navigation.navigate("Home")}>
+            <Text style={onBoardingstyle3.text4}>{constants.ntext3} </Text>
         </TouchableOpacity>
         
         </View>
     );
 };
-export default onBoarding3;
+export default OnBoarding3;

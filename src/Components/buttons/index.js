@@ -1,11 +1,9 @@
 import React from "react";
-import { View } from "react-native";
+import styles from "./buttonStyle";
 
 const index = () => {
 return (
-    <View>
-
-    </View>
+    <buttonStyle style={styles.style}></buttonStyle>
 )
 }
 

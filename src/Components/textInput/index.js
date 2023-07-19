@@ -1,10 +1,10 @@
 import React from "react";
 import { View } from "react-native";
-import textInputstyle from "./textInputstyle";
+import styles from "./textInputstyle";
 
 const index =() => {
 return (
-    <View style={textInputstyle.textInput}></View>
+    <View style={styles.style}></View>
 );
 };
 

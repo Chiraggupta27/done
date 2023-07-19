@@ -1,58 +1,62 @@
 import React from "react";
-import { View , Text , Image, TextInput, TouchableOpacity} from "react-native";
+import { View , Text, Image ,TextInput ,TouchableOpacity} from "react-native";
+import styles from "./signUpstyle";
 import images from "../../constants/images";
-import signUpstyle from "./signUpstyle";
-import icons from "../../constants/icons";
 import constants from "../../constants/constants";
-const signUp =()=>{
+import textInputstyle from "../../Components/textInput/textInputstyle"
+import buttonStyle from "../../Components/buttons/buttonStyle"
+
+const signUp = () => {
     return (
-        <View>
- <Image source={images.logo} style={signUpstyle.image}/>
- <Text style={signUpstyle.text1}>{constants.stext1}</Text>
- <Text style={signUpstyle.text2}>{constants.stext2}</Text>
-       <Text style= {signUpstyle.text3}>{constants.stext3}</Text>
-       <TextInput style={signUpstyle.textInput}>
-       </TextInput>
+<View style={styles.view1}>
+    <View style={styles.view2}>
+        <Image source = {images.logo} style={styles.image1}/>
+        <Text style={styles.text1}>{constants.stext1}</Text>
+    </View>
+    <View style={styles.view3}>
+        <Text style={styles.text2}>{constants.stext2}</Text>
+    </View>
 
-       <Text style= {signUpstyle.text4}>{constants.stext4}</Text>
-       <TextInput style={signUpstyle.textInput1}>
-       </TextInput>
+    <View style={styles.view4}>
+        <Text style={styles.text3}>{constants.stext3}</Text>
+        <TextInput style={textInputstyle.style}></TextInput>
+        <Text style={styles.text3}>{constants.stext4}</Text>
+        <TextInput style={textInputstyle.style}></TextInput>
+        <Text style={styles.text3}>{constants.stext5}</Text>
+        <TextInput style={textInputstyle.style}></TextInput>
+    </View>
 
-       <Text style= {signUpstyle.text5}>{constants.stext5}</Text>
-       <TextInput style={signUpstyle.textInput2}>
-       </TextInput>
-
-<View style={{flexDirection:"row"}}>
-       <TouchableOpacity style={signUpstyle.touchopacity}>
-            <Text style={signUpstyle.text6}>{constants.stext6}</Text>
+    <View style={styles.view5}>
+        <TouchableOpacity style={buttonStyle.style}>
+            <Text style={styles.text4}>{constants.stext6}</Text>
         </TouchableOpacity>
-        </View>
+    </View>
 
-        <View style={{flexDirection:"row" }}>
-            <Text style={signUpstyle.text7}>{constants.stext7}</Text>
-            <TouchableOpacity>
-                <Text style={signUpstyle.text8}> {constants.stext8}</Text>
-            </TouchableOpacity>
-        </View>
 
-        <View style={{flexDirection:"row"}}>
-            <TouchableOpacity style={signUpstyle.touchopacity1}>
-                <Image source={icons.facebook} style={signUpstyle.image1}/>
-                <Text style={signUpstyle.text9}>{constants.stext9}</Text>
-            </TouchableOpacity>
-            
-        </View>
+<View style={styles.view7}>
+    <View style={styles.view6}>
+        <Text style={styles.text3}>{constants.stext7}</Text>
+        <TouchableOpacity >
+            <Text style={styles.text5}>{constants.stext8}</Text>
+        </TouchableOpacity>
+    </View>
+    <View style={styles.view8}>
+        <TouchableOpacity style={buttonStyle.style1}>
+        <Text style={styles.text4}>{constants.stext9}</Text>
 
-        <View style={{flexDirection:"row" }}>
-            <TouchableOpacity style={signUpstyle.touchopacity2}>
-            <Image source={icons.google} style={signUpstyle.image1}/>
-                <Text style={signUpstyle.text10}>{constants.stext10}</Text>
-            </TouchableOpacity>
-        </View>
-        </View>
+        </TouchableOpacity >
 
-        
+        <TouchableOpacity style={buttonStyle.style2}>
+        <Text style={styles.text6}>{constants.stext10}</Text>
+
+        </TouchableOpacity>
+
+    </View>
+
+    </View>
+
+</View>
     );
 };
 
-export default signUp;
+export default signUp

@@ -1,4 +1,4 @@
-const image ={height:"65%" , width:"100%" , position:"fixed" }
+const image ={height:500 , width:430 , position:"relative" }
 const image1 ={height:80,width:260, alignSelf:"center" , position:"relative" , top:50 , position:"absolute"}
 const image2 ={justifyContent:"center",alignSelf:"center" , position:"absolute" , top:230}
 const text1 ={textAlign:"center",position:"relative" , top:50 , fontSize:30,fontWeight:"bold"}
