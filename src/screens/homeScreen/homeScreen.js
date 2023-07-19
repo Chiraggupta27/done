@@ -8,9 +8,13 @@ import constants from "../../constants/constants";
 const homeScreen =()=>{
     return (
         <View>
+            <View>
  <Image source={images.logo} style={homeScreenStyle.image}/>
  <Text style={homeScreenStyle.text1}>{constants.text1}</Text>
  <Text style={homeScreenStyle.text2}>{constants.text2}</Text>
+ </View>
+
+<View>
        <Text style= {homeScreenStyle.text3}>{constants.text3}</Text>
        <TextInput style={homeScreenStyle.textInput} 
        autoCorrect={false}
@@ -23,6 +27,7 @@ const homeScreen =()=>{
          autoCapitalize="none"
          secureTextEntry>
        </TextInput>
+       </View>
 <TouchableOpacity>
        <Text style={homeScreenStyle.text5}>{constants.text5}</Text>
        </TouchableOpacity>
@@ -39,7 +44,7 @@ const homeScreen =()=>{
                 <Text style={homeScreenStyle.text8}> {constants.text8}</Text>
             </TouchableOpacity>
         </View>
-
+<View style={{flexDirection:"coloum"}}>
         <View style={{flexDirection:"row"}}>
             <TouchableOpacity style={homeScreenStyle.touchopacity1}>
                 <Image source={icons.facebook} style={homeScreenStyle.image1}/>
@@ -53,6 +58,7 @@ const homeScreen =()=>{
             <Image source={icons.google} style={homeScreenStyle.image1}/>
                 <Text style={homeScreenStyle.text10}>{constants.text10}</Text>
             </TouchableOpacity>
+        </View>
         </View>
         </View>
 
